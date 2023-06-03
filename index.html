@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+    <script src="./src/script/chart.js" defer></script>
+    <script src="./src/script/script.js" defer></script>
+    <title>Rotina e Análise Quantitativa do Tempo</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Rotina e Análise Quantitativa do Tempo</h1>
+        <form id="task-form">
+            <label for="task-name">Tarefa:</label>
+            <input type="text" id="task-name" required>
+            <label for="task-duration">Duração (minutos):</label>
+            <input type="number" id="task-duration" min="1" required>
+            <button type="submit">Adicionar tarefa</button>
+        </form>
+        <h2>Resumo das tarefas</h2>
+        <div id="task-summary"></div>
+        <h2>Gráfico de tempo gasto</h2>
+        <div id="chart-container">
+            <canvas id="time-chart"></canvas>
+        </div>
+    </main>
+</body>
+</html>
